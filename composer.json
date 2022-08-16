@@ -1,0 +1,22 @@
+{
+    "name": "rkr/mermaid-generator",
+    "description": "A tool for partial creation of mermaid documents",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">= 8.0",
+
+        "rkr/class-finder": "*@dev"
+    },
+    "require-dev": {
+        "phpstan/phpstan": ">= 0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kir\\MermaidGenerator\\": "src/"
+        }
+    },
+    "scripts": {
+        "phpstan": "phpstan analyse -c phpstan.neon --memory-limit=2G"
+    }
+}
